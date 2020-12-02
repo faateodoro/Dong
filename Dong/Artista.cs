@@ -5,6 +5,7 @@ namespace Dong
 {
     public class Artista
     {
+        // deixar sets privados: Done
         public Artista(string nome, string email, string descricao)
         {
             Nome = nome;
@@ -16,7 +17,7 @@ namespace Dong
         public string Nome
         {
             get { return _nome; }
-            set 
+            private set 
             {
                 if (String.IsNullOrWhiteSpace(value))
                 {
@@ -30,7 +31,7 @@ namespace Dong
         public string Email
         {
             get { return _email; }
-            set 
+            private set 
             {
                 if (String.IsNullOrWhiteSpace(value))
                 {
@@ -48,7 +49,7 @@ namespace Dong
         public string Descricao
         {
             get { return _descricao; }
-            set 
+            private set 
             {
                 if (String.IsNullOrWhiteSpace(value))
                 {
